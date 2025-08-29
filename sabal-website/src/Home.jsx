@@ -60,8 +60,14 @@ function Home() {
   return (
     <>
         <h1 class = "name">Sabal Schuster</h1>
-        <Box display="flex" flexWrap="wrap" gap={20} sx = {{
-            justifyContent: "center"
+        <Box display="flex" gap={10} sx = {{
+            justifyContent: "center",
+            alignItems: "center",
+            flexDirection: {
+            sm: "column", // on extra-small screens → stack vertically
+            md: "row",    // on small+ screens → row layout
+            },
+
         }}>
             <WaveWord>Connect</WaveWord>
             <WaveWord>Create</WaveWord>
@@ -84,7 +90,18 @@ function Home() {
             </Typography>
         </Box>
         
-        <Button variant="contained" startIcon={<DownloadIcon />}>
+        <Button variant="contained" startIcon={<DownloadIcon />} onClick={()=>{
+            const fileUrl = "resume.pdf";
+            const fileName = "sabal_schuster.pdf";
+
+            const link = document.createElement("a");
+            link.href = fileUrl;
+            link.download = fileName;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+
+        }}>
             Resume
         </Button>
     </>
