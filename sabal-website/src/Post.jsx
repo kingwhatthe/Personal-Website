@@ -21,7 +21,7 @@ export const TextBox = ({children}) =>{
     </>)
 }
 
-export const Post = ({children, title, date, link}) => {
+export const Post = ({children, title, date, link, image}) => {
     return (<>
     <Box justifyContent="center" display="flex" minHeight="400px" gap={3}
     sx = {{
@@ -41,7 +41,7 @@ export const Post = ({children, title, date, link}) => {
                 sm: "1000px",
             },
             borderRadius:"50px",          
-        }}src="/sabalschuster.jpg" alt="Post image"></Box>
+        }}src={image} alt="Post image"></Box>
         <Box>
             <Box >
                 <Box display="flex" justifyContent="space-between" flexDirection="row">
