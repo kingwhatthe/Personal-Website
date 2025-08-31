@@ -64,6 +64,7 @@ function Home() {
             justifyContent: "center",
             alignItems: "center",
             flexDirection: {
+            xs: "column",
             sm: "column", // on extra-small screens → stack vertically
             md: "row",    // on small+ screens → row layout
             },
