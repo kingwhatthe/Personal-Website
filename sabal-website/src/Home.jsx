@@ -59,7 +59,24 @@ function Home() {
 
   return (
     <>
-        <h1 class = "name">Sabal Schuster</h1>
+        <Box display="flex" gap = {4} sx ={{
+          flexDirection: {
+            sm: "column",
+            md: "row",
+          },
+          justifyContent: "center",
+          alignItems: "center",
+
+        }}>
+          <Box component = "img" sx={{
+            width: {md: "150px", sm: "300px"}, 
+            height: "auto", 
+            borderRadius:"50px",
+            boxShadow: "7px 7px 5px rgba(0,0,0,.4)"
+            }} src="../public/web-app-manifest-512x512.png" alt="Sabal Schuster img" />
+          <h1 class = "name">Sabal Schuster</h1>
+        </Box>
+        
         <Box display="flex" gap={10} sx = {{
             justifyContent: "center",
             alignItems: "center",
