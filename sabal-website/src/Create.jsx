@@ -2,7 +2,6 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './Home.css'
-import { Link } from 'react-router-dom'
 import Button from "@mui/material/Button"
 import Box from "@mui/material/Box"
 import DownloadIcon from '@mui/icons-material/Download';
@@ -16,52 +15,51 @@ const HomeButton = ({children}) =>{
         </Typography>
     );
 }
-const WaveWord = ({ children, onClick }) => {
-  // Split word into letters
-  const letters = children.split("");
+// const WaveWord = ({ children, onClick }) => {
+//   // Split word into letters
+//   const letters = children.split("");
 
-  return (
-    <Box
-      component="span"
-      onClick={onClick}
-      sx={{
-        textShadow: "5px 5px 2px rgba(0,0,0,.4)",
-        display: "inline-flex",
-        gap: "2px",
-        fontSize: "3rem",
-        fontWeight: "bold",
-        cursor: "pointer",
-        userSelect: "none",
-        padding: "20px",
-        color:"white",
-      }}
-    >
-      {letters.map((letter, i) => (
-        <motion.span
-          key={i}
-          whileHover={{ y: -6 }}
-          whileTap={{ y: 6, scale: 0.9 }}
-          transition={{
-            type: "spring",
-            stiffness: 400,
-            damping: 10,
-            delay: i * 0.05, // wave effect
-          }}
-        >
-          {letter}
-        </motion.span>
-      ))}
-    </Box>
-  );
-};
+//   return (
+//     <Box
+//       component="span"
+//       onClick={onClick}
+//       sx={{
+//         textShadow: "5px 5px 2px rgba(0,0,0,.4)",
+//         display: "inline-flex",
+//         gap: "2px",
+//         fontSize: "3rem",
+//         fontWeight: "bold",
+//         cursor: "pointer",
+//         userSelect: "none",
+//         padding: "20px",
+//       }}
+//     >
+//       {letters.map((letter, i) => (
+//         <motion.span
+//           key={i}
+//           whileHover={{ y: -6 }}
+//           whileTap={{ y: 6, scale: 0.9 }}
+//           transition={{
+//             type: "spring",
+//             stiffness: 400,
+//             damping: 10,
+//             delay: i * 0.05, // wave effect
+//           }}
+//         >
+//           {letter}
+//         </motion.span>
+//       ))}
+//     </Box>
+//   );
+// };
 
 
-function Home() {
+function Create() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-        <Box display="flex" gap = {4} sx ={{
+        {/* <Box display="flex" gap = {4} sx ={{
           flexDirection: {
             sm: "column",
             md: "row",
@@ -77,9 +75,9 @@ function Home() {
             boxShadow: "7px 7px 5px rgba(0,0,0,.4)"
             }} src="../public/web-app-manifest-512x512.png" alt="Sabal Schuster img" />
           <h1 class = "name">Sabal Schuster</h1>
-        </Box>
+        </Box> */}
         
-        <Box display="flex" gap={10} sx = {{
+        {/* <Box display="flex" gap={10} sx = {{
             justifyContent: "center",
             alignItems: "center",
             flexDirection: {
@@ -89,16 +87,10 @@ function Home() {
             },
 
         }}>
-            <Link to="connect">
-              <WaveWord>Connect</WaveWord>
-            </Link>
-            <Link to="create">
-              <WaveWord>Create</WaveWord>
-            </Link>
-            <Link to="educate">
-              <WaveWord>Educate</WaveWord>
-            </Link>
-        </Box>
+            <WaveWord>Connect</WaveWord>
+            <WaveWord>Create</WaveWord>
+            <WaveWord>Educate</WaveWord>
+        </Box> */}
         <Box sx = {{
             p: '20px',
             m: "40px",
@@ -134,4 +126,4 @@ function Home() {
   )
 }
 
-export default Home
+export default Create

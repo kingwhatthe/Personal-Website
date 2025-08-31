@@ -2,6 +2,8 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Create from './Create.jsx'
+import { Route, Routes } from 'react-router-dom'
 import Home from './Home.jsx'
 
 function App() {
@@ -9,7 +11,11 @@ function App() {
 
   return (
     <>
-    <Home></Home>
+      <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/create" element={<Create />} />
+          {/* <Route path="/contact" element={<Contact />} /> */}
+      </Routes>
       {/* <div class = "background">
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
