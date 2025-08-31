@@ -75,7 +75,7 @@ function Home() {
             height: "auto", 
             borderRadius:"50px",
             boxShadow: "7px 7px 5px rgba(0,0,0,.4)"
-            }} src="../public/web-app-manifest-512x512.png" alt="Sabal Schuster img" />
+            }} src="/web-app-manifest-512x512.png" alt="Sabal Schuster img" />
           <h1 class = "name">Sabal Schuster</h1>
         </Box>
         
