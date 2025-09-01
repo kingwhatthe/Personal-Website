@@ -3,8 +3,11 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Create from './Create.jsx'
+import Connect from './Connect.jsx'
+import Educate from './Educate.jsx'
 import { Route, Routes } from 'react-router-dom'
 import Home from './Home.jsx'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,6 +17,8 @@ function App() {
       <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/create" element={<Create />} />
+          <Route path="/connect" element={<Connect />} />
+          <Route path="/educate" element={<Educate />} />
           {/* <Route path="/contact" element={<Contact />} /> */}
       </Routes>
       {/* <div class = "background">
