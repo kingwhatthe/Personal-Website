@@ -9,8 +9,12 @@ import * as React from 'react';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
+import jsLogo from './assets/js.png'
+import reactLogo from './assets/react.svg'
 
-const MovingBox = ({title, date, link, image, left, children}) =>{
+
+
+const MovingBox = ({title, date, link, image, left, children, languages}) =>{
   return (
      <Box
       component={motion.div}
@@ -19,7 +23,7 @@ const MovingBox = ({title, date, link, image, left, children}) =>{
       viewport={{ once: true, amount: 0.05}}  // `once` = animate only first time; `amount` = % visible before triggering
       transition={{ duration: .7, ease: "easeOut" }}
     >
-      <Post title = {title} date={date} link={link} image={image}>
+      <Post title = {title} date={date} link={link} image={image} languages={languages}>
         {children}
       </Post>
     </Box>
@@ -83,7 +87,16 @@ export function BasicMenu() {
 
 function Create() {
   const [count, setCount] = useState(0)
-
+  const langs = [
+          {
+            icon: jsLogo,
+            link: "js.com"
+          },
+          {
+            icon: reactLogo,
+            link: "react.com"
+          }
+        ]
   return (
     <>
         <Box sx={{
@@ -118,8 +131,8 @@ function Create() {
             -Sabal Schuster
           </Typography>
         </Box>
-
-        <MovingBox title = "this is a post" date = "8/20/2020" link = "https://google.com" image = "/sabalschuster.jpg" left={false}> 
+          
+        <MovingBox title = "this is a post" date = "8/20/2020" link = "https://google.com" image = "/sabalschuster.jpg" left={false} languages={langs}> 
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea omnis doloribus ad placeat aut dicta repudiandae illo debitis accusantium exercitationem atque odit deserunt eveniet fugiat id voluptates, voluptatibus reiciendis? Quod.
         </MovingBox>
         <MovingBox title = "this is a post" date = "8/20/2020" link = "https://google.com" image = "/sabalschuster.jpg" left={true}> 
