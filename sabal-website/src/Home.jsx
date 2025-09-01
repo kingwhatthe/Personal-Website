@@ -58,7 +58,7 @@ const WaveWord = ({ children, onClick }) => {
 
 function Home() {
   const [count, setCount] = useState(0)
-
+  document.documentElement.style.background = "radial-gradient(ellipse, rgba(36, 69, 131, 0.681) 5%,rgb(8, 4, 34) 95%)"
   return (
     <>
         <Box display="flex" gap = {4} sx ={{

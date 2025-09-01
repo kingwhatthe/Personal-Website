@@ -1,0 +1,79 @@
+{
+    "projects": [
+        {
+            "title": "Real Estate Website",
+            "date" : "July 2025",
+            "link":"https://github.com/kingwhatthe/real-estate-website/tree/master",
+            "image" : "/atidrealty.png",
+            "languages" : [
+                {
+                    "icon": "/js.png",
+                    "link": "js.com"
+                },
+                {
+                    "icon": "/HTML5_logo_and_wordmark.svg.png",
+                    "link": "https://html.com/"
+                },
+                {
+                    "icon": "/CSS3_logo_and_wordmark.svg.png",
+                    "link": "https://css.com/"
+                },
+                {
+                    "icon": "/React-icon.svg.png",
+                    "link": "https://react.com"
+                },
+                {
+                    "icon": "/PHP-logo.svg.png",
+                    "link": "https://php.net"
+                }
+            ],
+            "content":"Full stack real estate management designed to manage tenants, properties, and maintenance requests. Handle payment systems, user privileges, database management"
+        },
+        {
+            "title": "YouTube Title Analyzer",
+            "date" : "March - April 2025",
+            "link":"https://github.com/E53klasky/YouTubeTitleSearcher/tree/Ethan?tab=readme-ov-file",
+            "image" : "/yt.png",
+            "languages" : [
+                {
+                    "icon": "/js.png",
+                    "link": "js.com"
+                },
+                {
+                    "icon": "/HTML5_logo_and_wordmark.svg.png",
+                    "link": "https://html.com/"
+                },
+                {
+                    "icon": "/CSS3_logo_and_wordmark.svg.png",
+                    "link": "https://css.com/"
+                },
+                {
+                    "icon": "/React-icon.svg.png",
+                    "link": "https://react.com"
+                }
+            ],
+            "content":"We are developing a frontend-only website that compares the efficiency of two data structures: a Trie and a HashMap. Our goal is to visualize and analyze their performance in searching YouTube video titles. Key Features Comparison of Data Structures: We implement both a Trie and a HashMap to compare their search performance. Real-Time Animation: When a user searches for a YouTube video title, the website will animate the search process for better visualization. Title Optimization for YouTubers: We analyze YouTube video titles based on metrics like comments, views, and likes to help content creators optimize their titles for better engagement. Data Source: We used over 100,000 random videos from YouTube's API and found the video title, comments, views, and likes for each video."
+        },
+        {
+            "title": "Bug Blog",
+            "date" : "August 2025",
+            "link":"https://github.com/kingwhatthe/bugblog",
+            "image" : "/hymenoptera1.jpg",
+            "languages" : [
+                {
+                    "icon": "/js.png",
+                    "link": "js.com"
+                },
+                {
+                    "icon": "/HTML5_logo_and_wordmark.svg.png",
+                    "link": "https://html.com/"
+                },
+                {
+                    "icon": "/CSS3_logo_and_wordmark.svg.png",
+                    "link": "https://css.com/"
+                }
+            ],
+            "content":"It's a website but for bugs!"
+        }
+    ]
+}

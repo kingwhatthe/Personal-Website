@@ -9,8 +9,6 @@ import * as React from 'react';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-import jsLogo from './assets/js.png'
-import reactLogo from './assets/react.svg'
 import BasicMenu from './components/BasicMenu';
 import MovingBox from './components/MovingBox';
 
@@ -25,7 +23,8 @@ function Connect() {
             icon: reactLogo,
             link: "react.com"
           }
-        ]
+        ];
+  document.documentElement.style.background = "radial-gradient(ellipse, rgba(99, 36, 131, 0.68) 5%,rgba(20, 4, 34, 1) 95%)"
   return (
     <>
         <Box sx={{

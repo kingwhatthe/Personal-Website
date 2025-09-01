@@ -9,23 +9,14 @@ import * as React from 'react';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-import jsLogo from './assets/js.png'
-import reactLogo from './assets/react.svg'
+import postInfo from './postInfo.json'
 import BasicMenu from './components/BasicMenu';
 import MovingBox from './components/MovingBox';
 
 function Create() {
-  const [count, setCount] = useState(0)
-  const langs = [
-          {
-            icon: jsLogo,
-            link: "js.com"
-          },
-          {
-            icon: reactLogo,
-            link: "react.com"
-          }
-        ]
+  const [count, setCount] = useState(0);
+    const projects = postInfo.projects;
+  document.documentElement.style.background = "radial-gradient(ellipse, rgba(36, 69, 131, 0.681) 5%,rgb(8, 4, 34) 95%)"
   return (
     <>
         <Box sx={{
@@ -61,15 +52,11 @@ function Create() {
           </Typography>
         </Box>
           
-        <MovingBox title = "this is a post" date = "8/20/2020" link = "https://google.com" image = "/sabalschuster.jpg" left={false} languages={langs}> 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea omnis doloribus ad placeat aut dicta repudiandae illo debitis accusantium exercitationem atque odit deserunt eveniet fugiat id voluptates, voluptatibus reiciendis? Quod.
-        </MovingBox>
-        <MovingBox title = "this is a post" date = "8/20/2020" link = "https://google.com" image = "/sabalschuster.jpg" left={true}> 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea omnis doloribus ad placeat aut dicta repudiandae illo debitis accusantium exercitationem atque odit deserunt eveniet fugiat id voluptates, voluptatibus reiciendis? Quod.
-        </MovingBox>
-        <MovingBox title = "this is a post" date = "8/20/2020" link = "https://google.com" image = "/sabalschuster.jpg" left={false}> 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea omnis doloribus ad placeat aut dicta repudiandae illo debitis accusantium exercitationem atque odit deserunt eveniet fugiat id voluptates, voluptatibus reiciendis? Quod.
-        </MovingBox>
+        {projects?.map((post,i)=>(
+            <MovingBox title = {post.title} date = {post.date} link = {post.link} image = {post.image} left={i%2!=0} languages={post.languages}> 
+                {post.content ? post.content : "No Post content"}
+            </MovingBox>
+          ))}
     </>
   )
 }
