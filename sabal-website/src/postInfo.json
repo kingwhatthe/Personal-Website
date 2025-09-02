@@ -1,6 +1,35 @@
 {
     "projects": [
         {
+            "title": "This Website!",
+            "date" : "September 2025",
+            "image" : "/mywebsite.png",
+            "link" : "https://github.com/kingwhatthe/Personal-Website",
+            "languages" : [
+                {
+                    "icon": "/js.png",
+                    "link": "js.com"
+                },
+                {
+                    "icon": "/HTML5_logo_and_wordmark.svg.png",
+                    "link": "https://html.com/"
+                },
+                {
+                    "icon": "/CSS3_logo_and_wordmark.svg.png",
+                    "link": "https://www.w3.org/Style/CSS/Overview.en.html"
+                },
+                {
+                    "icon": "/React-icon.svg.png",
+                    "link": "https://react.com"
+                },
+                {
+                    "icon": "/mui-logo-png_seeklogo-440988.png",
+                    "link": "https://mui.com"
+                }
+            ],
+            "content":"I developed this website to show the world everything, I like to do. It is frontend only and I developed it myself using React."
+        },
+        {
             "title": "Real Estate Website",
             "date" : "July 2025",
             "image" : "/atidrealty.png",
