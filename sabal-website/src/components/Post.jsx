@@ -9,12 +9,16 @@ const TechIcon = ({icon, link})=>{
       target="_blank"  // optional: opens in new tab
       rel="noopener noreferrer"
       p="0"
+      sx={{
+         width: "50px", 
+         height: "50px"
+      }}
     >
       <Box 
         component='img'
         src={icon} 
         alt="custom icon" 
-        sx={{ width: 35, height: 35, borderRadius: "2px"}} 
+        sx={{ width: "100%", height: "100%", objectFit: "contain", borderRadius: "2px"}} 
       />
     </IconButton>
   )
@@ -40,6 +44,12 @@ export const TextBox = ({children}) =>{
 }
 
 export const Post = ({children, title, date, link, image, languages}) => {
+    // Convert children to plain text
+    const text = React.Children.toArray(children).join(" ");
+
+    // Count words by splitting on whitespace
+    const wordCount = text.trim().split(/\s+/).filter(Boolean).length;
+
     return (<>
     <Box justifyContent="center" display="flex" gap={3}
     sx = {{
@@ -48,19 +58,27 @@ export const Post = ({children, title, date, link, image, languages}) => {
             margin: "150px 0 150px 0",
             borderRadius: "30px",
             flexDirection: {
-                md: "row",
+                md: wordCount>=100 ? "column" : "row",
                 sm: "column",
                 xs: "column",
             },
     }}>
         <Box component="img" sx={{
             maxHeight: {
-                md: "400px",
+                md: wordCount>=100 ? "1000px" : "400px",
                 sm: "1000px",
             },
-            width: "50%",
-            height: "50%",
-            // objectFit:"cover",
+            width: {
+                md: wordCount>=100 ? "100%" : "50%",
+                sm: "100%",
+                xs: "100%",
+            },
+            height: {
+                md: wordCount>=100 ? "100%" : "50%",
+                sm: "100%",
+                xs: "100%",
+            },
+            // objectFit:"contain",
             borderRadius:"50px",          
         }}src={image} alt="Post image"></Box>
         <Box>
@@ -80,17 +98,29 @@ export const Post = ({children, title, date, link, image, languages}) => {
                     </Box>
                 <Box display="flex" alignItems="flex-start" flexDirection="column" gap = {2}>
                     <Typography variant="h4">{date}</Typography>
+                    {link ?
                     <Button variant="contained" href={link}>Go to Project</Button>
+                    : <></>}
                 </Box>
                 
             </Box>
+            {wordCount<100 ? 
             <TextBox>
                 <>
                     {children}
                 </>
             </TextBox>
+            : <></>
+            }
         </Box>
-        
+        {wordCount>=100 ? 
+            <TextBox>
+                <>
+                    {children}
+                </>
+            </TextBox>
+            : <></>
+        }
     </Box>
     </>);
 }

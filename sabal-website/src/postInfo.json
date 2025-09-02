@@ -3,7 +3,6 @@
         {
             "title": "Real Estate Website",
             "date" : "July 2025",
-            "link":"https://github.com/kingwhatthe/real-estate-website/tree/master",
             "image" : "/atidrealty.png",
             "languages" : [
                 {
@@ -16,7 +15,7 @@
                 },
                 {
                     "icon": "/CSS3_logo_and_wordmark.svg.png",
-                    "link": "https://css.com/"
+                    "link": "https://www.w3.org/Style/CSS/Overview.en.html"
                 },
                 {
                     "icon": "/React-icon.svg.png",
@@ -25,34 +24,13 @@
                 {
                     "icon": "/PHP-logo.svg.png",
                     "link": "https://php.net"
+                },
+                {
+                    "icon": "/mui-logo-png_seeklogo-440988.png",
+                    "link": "https://mui.com"
                 }
             ],
-            "content":"Full stack real estate management designed to manage tenants, properties, and maintenance requests. Handle payment systems, user privileges, database management"
-        },
-        {
-            "title": "YouTube Title Analyzer",
-            "date" : "March - April 2025",
-            "link":"https://github.com/E53klasky/YouTubeTitleSearcher/tree/Ethan?tab=readme-ov-file",
-            "image" : "/yt.png",
-            "languages" : [
-                {
-                    "icon": "/js.png",
-                    "link": "js.com"
-                },
-                {
-                    "icon": "/HTML5_logo_and_wordmark.svg.png",
-                    "link": "https://html.com/"
-                },
-                {
-                    "icon": "/CSS3_logo_and_wordmark.svg.png",
-                    "link": "https://css.com/"
-                },
-                {
-                    "icon": "/React-icon.svg.png",
-                    "link": "https://react.com"
-                }
-            ],
-            "content":"We are developing a frontend-only website that compares the efficiency of two data structures: a Trie and a HashMap. Our goal is to visualize and analyze their performance in searching YouTube video titles. Key Features Comparison of Data Structures: We implement both a Trie and a HashMap to compare their search performance. Real-Time Animation: When a user searches for a YouTube video title, the website will animate the search process for better visualization. Title Optimization for YouTubers: We analyze YouTube video titles based on metrics like comments, views, and likes to help content creators optimize their titles for better engagement. Data Source: We used over 100,000 random videos from YouTube's API and found the video title, comments, views, and likes for each video."
+            "content":"My partner and I are developing a full stack real estate management website designed to manage tenants, properties, and maintenance requests. It is also going to be handling payment systems, user privileges, and database management. It is designed for and hired by real estate managers to manage properties."
         },
         {
             "title": "Bug Blog",
@@ -70,10 +48,73 @@
                 },
                 {
                     "icon": "/CSS3_logo_and_wordmark.svg.png",
-                    "link": "https://css.com/"
+                    "link": "https://www.w3.org/Style/CSS/Overview.en.html/"
+                },
+                {
+                    "icon": "/PHP-logo.svg.png",
+                    "link": "https://php.net"
                 }
             ],
-            "content":"It's a website but for bugs!"
+            "content":"Using vanilla Javascript, HTML, and CSS, with no frameworks or styling guidelines, to fuel my love for insects, I am creating a full stack social media platform for insect photographers. It will utilize user authentication and permissions to allow different types of ratings on posts. Each post will be rated with an audience and user score. Right now, the website is a working shell with an implemented PHP backend."
+        },
+        {
+            "title": "YouTube Title Analyzer",
+            "date" : "March - April 2025",
+            "link":"https://github.com/E53klasky/YouTubeTitleSearcher/tree/Ethan?tab=readme-ov-file",
+            "image" : "/yt.png",
+            "languages" : [
+                {
+                    "icon": "/js.png",
+                    "link": "js.com"
+                },
+                {
+                    "icon": "/HTML5_logo_and_wordmark.svg.png",
+                    "link": "https://html.com/"
+                },
+                {
+                    "icon": "/CSS3_logo_and_wordmark.svg.png",
+                    "link": "https://www.w3.org/Style/CSS/Overview.en.html"
+                },
+                {
+                    "icon": "/React-icon.svg.png",
+                    "link": "https://react.com"
+                },
+                {
+                    "icon": "/mui-logo-png_seeklogo-440988.png",
+                    "link": "https://mui.com"
+                }
+            ],
+            "content":"I worked with a team of three to develop a frontend-only website that compares the efficiency of two data structures: a Trie and a HashMap to analyze YouTube video titles. Our goal was to visualize and analyze the performance of the two data structures in sorting and analyzing YouTube video titles. We used the YouTube 8M API for the data (utilizing over 100,000 data points at a time). We implemented real-time animation, using Framer-Motion. When a user searches for a YouTube video title, the website will animate the search process for better visualization. The title optimization algorithm was based an analysis of YouTube video titles based on metrics like comments, views, and likes to help content creators optimize their titles for better engagement."
         }
-    ]
+    ],
+    "education": {
+        "college" : {
+            "university" : "University of Florida",
+            "GPA" : "3.95",
+            "major" : "Computer Engineering",
+            "graduation" : "May 2028",
+            "image" : "https://yt3.googleusercontent.com/BhMfQKZIfhFm_R7u3UOAJPEG5p5d2IJgZC81pX0sjp89xYR3y4qQf6IHWOYnCF1UrWnIIxclqg4=s160-c-k-c0x00ffffff-no-rj",
+            "content":""
+        },
+        "experience" : [
+            {
+                "title" : "Programming 1 (COP3502) Teaching Assistent",
+                "date" : "August - December 2025",
+                "image" : "",
+                "content" : "Ddidid ajhskd j"
+            },
+            {
+                "title" : "Programming 2 (COP3503) Teaching Assistent",
+                "date" : "January - May 2025",
+                "image" : "",
+                "content" : "Ddidid ajhskd j"
+            },
+            {
+                "title" : "High School Math Tutor",
+                "date" : "September 2021 - May 2024",
+                "image" : "",
+                "content" : "Ddidid ajhskd j"
+            }
+        ]
+    }
 }

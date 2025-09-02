@@ -11,11 +11,81 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import BasicMenu from './components/BasicMenu';
 import MovingBox from './components/MovingBox';
-import postInfo from './postInfo.json'
+import postInfo from './postInfo.json';
+import { TextBox } from './components/Post';
+
+const Education = ({university, gpa, gradDate, major, image, content}) => {
+      // Convert children to plain text
+      const text = React.Children.toArray(content).join(" ");
+  
+      // Count words by splitting on whitespace
+      const wordCount = text.trim().split(/\s+/).filter(Boolean).length;
+  return(<>
+    <Box justifyContent="center" display="flex" gap={3}
+    sx = {{
+            backgroundColor: "rgba(139, 139, 141, 0.22)",
+            p: 5,
+            margin: "150px 0 150px 0",
+            borderRadius: "30px",
+            flexDirection: {
+                md: wordCount>=100 ? "column" : "row",
+                sm: "column",
+                xs: "column",
+            },
+    }}>
+        <Box component="img" sx={{
+            maxHeight: {
+                md: wordCount>=100 ? "1000px" : "400px",
+                sm: "1000px",
+            },
+            width: {
+                md: wordCount>=100 ? "100%" : "50%",
+                sm: "100%",
+                xs: "100%",
+            },
+            height: {
+                md: wordCount>=100 ? "100%" : "50%",
+                sm: "100%",
+                xs: "100%",
+            },
+            // objectFit:"contain",
+            borderRadius:"50px",          
+        }}src={image} alt="Post image"></Box>
+        <Box>
+            <Box>
+                <Box display="flex" flexDirection="row" gap={1} flexWrap="wrap">
+                    <Typography variant="h3">{university}</Typography>
+                </Box>
+                <Box display="flex" alignItems="flex-start" flexDirection="column" gap = {2}>
+                    <Typography variant="h4">{gradDate}</Typography>
+                </Box>
+                
+            </Box>
+            {wordCount<100 ? 
+            <TextBox>
+                <>
+                    {content}
+                </>
+            </TextBox>
+            : <></>
+            }
+        </Box>
+        {wordCount>=100 ? 
+            <TextBox>
+                <>
+                    {content}
+                </>
+            </TextBox>
+            : <></>
+        }
+    </Box>
+    </>);
+}
 
 function Educate() {
   const [count, setCount] = useState(0)
-  const educations = postInfo.educations;
+  const experiences = postInfo.education.experience;
+  const education = postInfo.education.college;
 //   const langs = [
 //           {
 //             icon: jsLogo,
@@ -61,8 +131,9 @@ function Educate() {
           <Typography>
             — Dr. Seuss
           </Typography>
+          <Education university={education.university} gpa={education.GPA} gradDate={education.graduation} image={education.image} major={education.major} content={education.content}/>
         </Box>
-          {educations?.map((post,i)=>(
+          {experiences?.map((post,i)=>(
             <MovingBox title = {post.title} date = {post.date} link = {post.link} image = {post.image} left={i%2!=0} languages={post.languages}> 
                 {post.content ? post.content : "No Post content"}
             </MovingBox>
