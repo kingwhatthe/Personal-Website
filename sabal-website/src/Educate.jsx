@@ -27,6 +27,7 @@ const Education = ({university, gpa, gradDate, major, image, content}) => {
             p: 5,
             margin: "150px 0 150px 0",
             borderRadius: "30px",
+            minWidth: "90%",
             flexDirection: {
                 md: wordCount>=100 ? "column" : "row",
                 sm: "column",
@@ -34,10 +35,10 @@ const Education = ({university, gpa, gradDate, major, image, content}) => {
             },
     }}>
         <Box component="img" sx={{
-            maxHeight: {
-                md: wordCount>=100 ? "1000px" : "400px",
-                sm: "1000px",
-            },
+            // maxHeight: {
+            //     md: wordCount>=100 ? "1000px" : "400px",
+            //     sm: "1000px",
+            // },
             width: {
                 md: wordCount>=100 ? "100%" : "50%",
                 sm: "100%",
@@ -48,7 +49,7 @@ const Education = ({university, gpa, gradDate, major, image, content}) => {
                 sm: "100%",
                 xs: "100%",
             },
-            // objectFit:"contain",
+            overflow: "hidden",
             borderRadius:"50px",          
         }}src={image} alt="Post image"></Box>
         <Box>
@@ -57,7 +58,13 @@ const Education = ({university, gpa, gradDate, major, image, content}) => {
                     <Typography variant="h3">{university}</Typography>
                 </Box>
                 <Box display="flex" alignItems="flex-start" flexDirection="column" gap = {2}>
-                    <Typography variant="h4">{gradDate}</Typography>
+                    <Typography variant="h4">Graduation: {gradDate}</Typography>
+                </Box>
+                <Box display="flex" alignItems="flex-start" flexDirection="column" gap = {2}>
+                    <Typography variant="h4">Major: {major}</Typography>
+                </Box>
+                <Box display="flex" alignItems="flex-start" flexDirection="column" gap = {2}>
+                    <Typography variant="h4">GPA: {gpa}</Typography>
                 </Box>
                 
             </Box>
