@@ -93,7 +93,7 @@ function Educate() {
   React.useEffect(() => {
     const metaThemeColor = document.querySelector("meta[name=theme-color]");
     if (metaThemeColor) {
-      metaThemeColor.setAttribute("content", "#221f04ff");
+      metaThemeColor.setAttribute("content", "#221e04ff");
     }
   }, []);
   const experiences = postInfo.education.experience;

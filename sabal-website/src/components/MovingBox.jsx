@@ -15,7 +15,7 @@ const MovingBox = ({title, date, link, image, left, children, languages}) =>{
       component={motion.div}
       initial={{ x: left ? "100%" : "-100%", opacity: 1 }}     // Start off-screen
       whileInView={{ x: left ? "7%" : "-7%", opacity: 1 }}      // Animate when scrolled into view
-      viewport={{ once: true, amount: 0.05}}  // `once` = animate only first time; `amount` = % visible before triggering
+      viewport={{ once: true, amount: 0.02}}  // `once` = animate only first time; `amount` = % visible before triggering
       transition={{ duration: .7, ease: "easeOut" }}
     >
       <Post title = {title} date={date} link={link} image={image} languages={languages}>
