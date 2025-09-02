@@ -94,26 +94,26 @@
             "major" : "Computer Engineering",
             "graduation" : "May 2028",
             "image" : "https://yt3.googleusercontent.com/BhMfQKZIfhFm_R7u3UOAJPEG5p5d2IJgZC81pX0sjp89xYR3y4qQf6IHWOYnCF1UrWnIIxclqg4=s160-c-k-c0x00ffffff-no-rj",
-            "content":"lorem epsion ao ejhjha wglawy duia ihsd jhbe dywe cywgkaygf dgkygdskf ksgd fkuy"
+            "content":"I am pursuing a Bachelor of Science in Computer Engineering. Some of the notable classes I have taken are Digital Logic, Data Structures and Algorithms, Circuits, Discrete Structures, and Advanced Programming Fundamentals."
         },
         "experience" : [
             {
                 "title" : "Programming 1 (COP3502) Teaching Assistent",
                 "date" : "August - December 2025",
-                "image" : "",
-                "content" : "Ddidid ajhskd j"
+                "image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png",
+                "content" : "I assisted in creating and managing Canvas course content while also holding regular online office hours to provide individualized help and debugging support for lab work and course projects. I contributed to the development of review materials to help students prepare for midterms and finals, responded to discussion boards and student inquiries, and graded students’ projects and labs. I also handled grading desputes."
             },
             {
                 "title" : "Programming 2 (COP3503) Teaching Assistent",
                 "date" : "January - May 2025",
-                "image" : "",
-                "content" : "Ddidid ajhskd j"
+                "image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png",
+                "content" : "I led weekly 2-hour discussion sessions to reinforce core course concepts of the C++ curriculum and facilitate collaborative learning. I provided hands-on support during labs, assisting students with assignments, debugging code and reviewing content. I held regular office hours both in-person and online to offer individualized help with lab work and course projects. Every few weeks, I helped proctor exams and supported instructors in managing assessments fairly and efficiently. Furthermore, I contributed to the development of review materials to help students prepare for midterms and finals. I also graded student assignments."
             },
             {
                 "title" : "High School Math Tutor",
                 "date" : "September 2021 - May 2024",
-                "image" : "",
-                "content" : "Ddidid ajhskd j"
+                "image" : "https://news.harvard.edu/wp-content/uploads/2022/11/iStock-mathproblems.jpg",
+                "content" : "I attended biweekly after-school peer math tutoring sessions where I volunteered to teach fellow students a wide range of math concepts, from Algebra 1 to AP Calculus to computer science."
             }
         ]
     }

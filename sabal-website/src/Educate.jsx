@@ -138,8 +138,8 @@ function Educate() {
           <Typography>
             — Dr. Seuss
           </Typography>
-          <Education university={education.university} gpa={education.GPA} gradDate={education.graduation} image={education.image} major={education.major} content={education.content}/>
         </Box>
+        <Education university={education.university} gpa={education.GPA} gradDate={education.graduation} image={education.image} major={education.major} content={education.content}/>
           {experiences?.map((post,i)=>(
             <MovingBox title = {post.title} date = {post.date} link = {post.link} image = {post.image} left={i%2!=0} languages={post.languages}> 
                 {post.content ? post.content : "No Post content"}
