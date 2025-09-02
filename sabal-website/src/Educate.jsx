@@ -90,7 +90,12 @@ const Education = ({university, gpa, gradDate, major, image, content}) => {
 }
 
 function Educate() {
-  const [count, setCount] = useState(0)
+  React.useEffect(() => {
+    const metaThemeColor = document.querySelector("meta[name=theme-color]");
+    if (metaThemeColor) {
+      metaThemeColor.setAttribute("content", "#221f04ff");
+    }
+  }, []);
   const experiences = postInfo.education.experience;
   const education = postInfo.education.college;
 //   const langs = [

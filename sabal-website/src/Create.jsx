@@ -14,8 +14,13 @@ import BasicMenu from './components/BasicMenu';
 import MovingBox from './components/MovingBox';
 
 function Create() {
-  const [count, setCount] = useState(0);
-    const projects = postInfo.projects;
+  React.useEffect(() => {
+    const metaThemeColor = document.querySelector("meta[name=theme-color]");
+    if (metaThemeColor) {
+      metaThemeColor.setAttribute("content", "#080422");
+    }
+  }, []);
+  const projects = postInfo.projects;
   document.documentElement.style.background = "radial-gradient(ellipse, rgba(36, 69, 131, 0.681) 5%,rgb(8, 4, 34) 95%)"
   return (
     <>

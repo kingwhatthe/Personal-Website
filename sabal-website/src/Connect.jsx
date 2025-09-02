@@ -14,7 +14,12 @@ import MovingBox from './components/MovingBox';
 import postInfo from './postInfo.json'
 
 function Connect() {
-  const [count, setCount] = useState(0)
+  React.useEffect(() => {
+    const metaThemeColor = document.querySelector("meta[name=theme-color]");
+    if (metaThemeColor) {
+      metaThemeColor.setAttribute("content", "#160422ff");
+    }
+  }, []);
 
   document.documentElement.style.background = "radial-gradient(ellipse, rgba(99, 36, 131, 0.68) 5%,rgba(20, 4, 34, 1) 95%)"
   const connections = postInfo.connections;

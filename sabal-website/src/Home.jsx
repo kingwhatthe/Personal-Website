@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './Home.css'
+import * as React from 'react'
 import { Link } from 'react-router-dom'
 import Button from "@mui/material/Button"
 import Box from "@mui/material/Box"
@@ -59,7 +60,14 @@ const WaveWord = ({ children, onClick }) => {
 
 
 function Home() {
-  const [count, setCount] = useState(0)
+
+  React.useEffect(() => {
+    const metaThemeColor = document.querySelector("meta[name=theme-color]");
+    if (metaThemeColor) {
+      metaThemeColor.setAttribute("content", "#080422");
+    }
+  }, []);
+
   document.documentElement.style.background = "radial-gradient(ellipse, rgba(36, 69, 131, 0.681) 5%,rgb(8, 4, 34) 95%)"
   return (
     <>
