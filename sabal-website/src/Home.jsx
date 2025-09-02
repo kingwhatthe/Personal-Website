@@ -9,6 +9,7 @@ import DownloadIcon from '@mui/icons-material/Download';
 import Typography from "@mui/material/Typography";
 import { motion } from "framer-motion";
 import Footer from './components/Footer'
+import { TextBox } from './components/Post'
 
 const HomeButton = ({children}) =>{
     return(
@@ -100,23 +101,14 @@ function Home() {
               <WaveWord>Educate</WaveWord>
             </Link>
         </Box>
-        <Box sx = {{
-            p: '20px',
-            m: "40px",
-            backgroundColor: "rgba(162, 172, 172, 0.17)",
-            borderRadius: "20px"
-        }}>
-            <Typography>
-                I'm a Computer Science student at the University of Florida with a strong background in C++, web development, and software design. I enjoy turning technical ideas into real tools, whether that's building interactive websites, developing efficient algorithms, or solving problems through research and collaboration.
-                <br></br>
-                <br></br>
-                Recently, my team built a React-based website that visualizes the performance of Tries vs. HashMaps using real YouTube search data—combining animation, data analysis, and UI design to help content creators optimize their titles. Projects like this reflect my interest in creating useful, engaging tools that are backed by real data.
-                <br></br>
-                <br></br>
-                Outside of coursework, I’ve also explored areas like 3D printing, teaching, and hardware testing through internships, TA positions, and research. With a near 4.0 GPA and a passion for both design and functionality, I’m always looking for opportunities to grow as a developer and work on meaningful, real-world projects.
-            </Typography>
-        </Box>
-        
+          <TextBox>
+              Hello and welcome to sabalschuster.com! 
+              My name is Sabal. I'm a Computer Science student at the University of Florida with a strong background in C++, web development, and software design. I enjoy turning technical ideas into real tools, whether that's building interactive websites, developing efficient algorithms, or solving problems through collaboration.
+              <br></br>
+              <br></br>
+              To learn more about me, check out my core values by clicking on each of them.
+          </TextBox>
+    
     </>
   )
 }
