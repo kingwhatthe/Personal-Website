@@ -98,13 +98,13 @@
         },
         "experience" : [
             {
-                "title" : "Programming 1 (COP3502) Teaching Assistent",
+                "title" : "Programming 1 (COP3502) Teaching Assistant",
                 "date" : "August - December 2025",
                 "image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png",
                 "content" : "I assisted in creating and managing Canvas course content while also holding regular online office hours to provide individualized help and debugging support for lab work and course projects. I contributed to the development of review materials to help students prepare for midterms and finals, responded to discussion boards and student inquiries, and graded students’ projects and labs. I also handled grading desputes."
             },
             {
-                "title" : "Programming 2 (COP3503) Teaching Assistent",
+                "title" : "Programming 2 (COP3503) Teaching Assistant",
                 "date" : "January - May 2025",
                 "image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png",
                 "content" : "I led weekly 2-hour discussion sessions to reinforce core course concepts of the C++ curriculum and facilitate collaborative learning. I provided hands-on support during labs, assisting students with assignments, debugging code and reviewing content. I held regular office hours both in-person and online to offer individualized help with lab work and course projects. Every few weeks, I helped proctor exams and supported instructors in managing assessments fairly and efficiently. Furthermore, I contributed to the development of review materials to help students prepare for midterms and finals. I also graded student assignments."
@@ -116,5 +116,25 @@
                 "content" : "I attended biweekly after-school peer math tutoring sessions where I volunteered to teach fellow students a wide range of math concepts, from Algebra 1 to AP Calculus to computer science."
             }
         ]
-    }
+    },
+    "connections":[
+        {       
+            "title" : "Software Engineering Club - Head of Operations",
+            "date" : "August 2025",
+            "image" : "https://avatars.githubusercontent.com/u/8128014?s=280&v=4",
+            "content" : "I managed and allocated funds for club events, workshops, and general body meetings while also handling reimbursement and payment requests with the university and sponsors. In addition, I led the management of competitions, such as the Leetcode Competition, and assisted in organizing the club fair and other events."
+        },
+        {       
+            "title" : "Shabbat Executive - Chabad Jewish Center UF",
+            "date" : "August 2025",
+            "image" : "/chabad.jpeg",
+            "content" : "As a Shabbat Executive, I help organize weeking Shabbat dinners, gather feeback from students, and make newcomers and underclassmen feel at home. I also serve as a Chabad mentor for incoming freshmen at UF"
+        },
+        {       
+            "title" : "R&D Intern - Wham Bam Systems",
+            "date" : "June - August 2024",
+            "image" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTghbYSqhiweV2Fq5_WJ3j9Ivm0-ecnAr8zcg&s",
+            "content" : "I led the documentation and research for the development of a new proprietary product, including investigating potential new technologies and products. I also assisted in running over 100 tests on a new product—the carbon fiber build plate—and contributed to CAD design and 3D printing of various accessory products."
+        }
+    ]
 }

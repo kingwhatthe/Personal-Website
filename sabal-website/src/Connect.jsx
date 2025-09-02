@@ -11,20 +11,13 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import BasicMenu from './components/BasicMenu';
 import MovingBox from './components/MovingBox';
+import postInfo from './postInfo.json'
 
 function Connect() {
   const [count, setCount] = useState(0)
-  const langs = [
-          {
-            icon: jsLogo,
-            link: "js.com"
-          },
-          {
-            icon: reactLogo,
-            link: "react.com"
-          }
-        ];
+
   document.documentElement.style.background = "radial-gradient(ellipse, rgba(99, 36, 131, 0.68) 5%,rgba(20, 4, 34, 1) 95%)"
+  const connections = postInfo.connections;
   return (
     <>
         <Box sx={{
@@ -54,22 +47,18 @@ function Connect() {
           </Box>
 
           <Typography sx={{fontStyle:"italic"}}>
-            "Creation is like cooking; go make some lemonade"
+            "For small creatures such as we the vastness is bearable only through love."
           </Typography>
           <Typography>
-            -Sabal Schuster
+            — Carl Sagan
           </Typography>
         </Box>
           
-        <MovingBox title = "this is a post" date = "8/20/2020" link = "https://google.com" image = "/sabalschuster.jpg" left={false} languages={langs}> 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea omnis doloribus ad placeat aut dicta repudiandae illo debitis accusantium exercitationem atque odit deserunt eveniet fugiat id voluptates, voluptatibus reiciendis? Quod.
-        </MovingBox>
-        <MovingBox title = "this is a post" date = "8/20/2020" link = "https://google.com" image = "/sabalschuster.jpg" left={true}> 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea omnis doloribus ad placeat aut dicta repudiandae illo debitis accusantium exercitationem atque odit deserunt eveniet fugiat id voluptates, voluptatibus reiciendis? Quod.
-        </MovingBox>
-        <MovingBox title = "this is a post" date = "8/20/2020" link = "https://google.com" image = "/sabalschuster.jpg" left={false}> 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea omnis doloribus ad placeat aut dicta repudiandae illo debitis accusantium exercitationem atque odit deserunt eveniet fugiat id voluptates, voluptatibus reiciendis? Quod.
-        </MovingBox>
+        {connections?.map((post,i)=>(
+            <MovingBox title = {post.title} date = {post.date} link = {post.link} image = {post.image} left={i%2!=0} languages={post.languages}> 
+                {post.content ? post.content : "No Post content"}
+            </MovingBox>
+          ))}
     </>
   )
 }
