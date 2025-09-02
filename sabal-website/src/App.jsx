@@ -7,6 +7,7 @@ import Connect from './Connect.jsx'
 import Educate from './Educate.jsx'
 import { Route, Routes } from 'react-router-dom'
 import Home from './Home.jsx'
+import Footer from './components/Footer.jsx'
 
 
 function App() {
@@ -19,8 +20,8 @@ function App() {
           <Route path="/create" element={<Create />} />
           <Route path="/connect" element={<Connect />} />
           <Route path="/educate" element={<Educate />} />
-          {/* <Route path="/contact" element={<Contact />} /> */}
       </Routes>
+                <Footer/>
       {/* <div class = "background">
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />

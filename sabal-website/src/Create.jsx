@@ -45,10 +45,10 @@ function Create() {
           </Box>
 
           <Typography sx={{fontStyle:"italic"}}>
-            "Creation is like cooking; go make some lemonade"
+            "We think we have solved the mystery of creation. Maybe we should patent the universe and charge everyone royalties for their existence."
           </Typography>
           <Typography>
-            -Sabal Schuster
+            — Stephen Hawking
           </Typography>
         </Box>
           

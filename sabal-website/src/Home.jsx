@@ -8,6 +8,7 @@ import Box from "@mui/material/Box"
 import DownloadIcon from '@mui/icons-material/Download';
 import Typography from "@mui/material/Typography";
 import { motion } from "framer-motion";
+import Footer from './components/Footer'
 
 const HomeButton = ({children}) =>{
     return(
@@ -116,20 +117,6 @@ function Home() {
             </Typography>
         </Box>
         
-        <Button variant="contained" startIcon={<DownloadIcon />} onClick={()=>{
-            const fileUrl = "resume.pdf";
-            const fileName = "sabal_schuster.pdf";
-
-            const link = document.createElement("a");
-            link.href = fileUrl;
-            link.download = fileName;
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-
-        }}>
-            Resume
-        </Button>
     </>
   )
 }
