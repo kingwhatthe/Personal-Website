@@ -8,7 +8,7 @@
             "languages" : [
                 {
                     "icon": "/js.png",
-                    "link": "js.com"
+                    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
                 },
                 {
                     "icon": "/HTML5_logo_and_wordmark.svg.png",
@@ -27,7 +27,7 @@
                     "link": "https://mui.com"
                 }
             ],
-            "content":"I developed this website to show the world everything, I like to do. It is frontend only and I developed it myself using React."
+            "content":"I developed this website to show the world everything I like to do. It is frontend only and I developed it myself using React."
         },
         {
             "title": "Real Estate Website",
@@ -36,7 +36,7 @@
             "languages" : [
                 {
                     "icon": "/js.png",
-                    "link": "js.com"
+                    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
                 },
                 {
                     "icon": "/HTML5_logo_and_wordmark.svg.png",
@@ -59,7 +59,7 @@
                     "link": "https://mui.com"
                 }
             ],
-            "content":"My partner and I are developing a full stack real estate management website designed to manage tenants, properties, and maintenance requests. It is also going to be handling payment systems, user privileges, and database management. It is designed for and hired by real estate managers to manage properties."
+            "content":"My partner and I are developing a full stack real estate management website designed to manage tenants, properties, and maintenance requests. It will also handle payment systems, user privileges, and database management. It is designed for and hired by real estate managers to manage properties."
         },
         {
             "title": "Bug Blog",
@@ -69,7 +69,7 @@
             "languages" : [
                 {
                     "icon": "/js.png",
-                    "link": "js.com"
+                    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
                 },
                 {
                     "icon": "/HTML5_logo_and_wordmark.svg.png",
@@ -94,7 +94,7 @@
             "languages" : [
                 {
                     "icon": "/js.png",
-                    "link": "js.com"
+                    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
                 },
                 {
                     "icon": "/HTML5_logo_and_wordmark.svg.png",
@@ -113,7 +113,7 @@
                     "link": "https://mui.com"
                 }
             ],
-            "content":"I worked with a team of three to develop a frontend-only website that compares the efficiency of two data structures: a Trie and a HashMap to analyze YouTube video titles. Our goal was to visualize and analyze the performance of the two data structures in sorting and analyzing YouTube video titles. We used the YouTube 8M API for the data (utilizing over 100,000 data points at a time). We implemented real-time animation, using Framer-Motion. When a user searches for a YouTube video title, the website will animate the search process for better visualization. The title optimization algorithm was based an analysis of YouTube video titles based on metrics like comments, views, and likes to help content creators optimize their titles for better engagement."
+            "content":"I worked with a team of three to develop a frontend-only website that compares the efficiency of two data structures: a Trie and a HashMap to analyze YouTube video titles. Our goal was to visualize and analyze the performance of the two data structures in sorting and analyzing YouTube video titles. We used the YouTube 8M API for the data (utilizing over 100,000 data points at a time). We implemented real-time animation, using Framer-Motion. When a user searches for a YouTube video title, the website will animate the search process for better visualization. The title optimization algorithm was based ono an analysis of YouTube video titles based on metrics like comments, views, and likes to help content creators optimize their titles for better engagement."
         }
     ],
     "education": {
@@ -136,7 +136,7 @@
                 "title" : "Programming 2 (COP3503) Teaching Assistant",
                 "date" : "January - May 2025",
                 "image" : "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png",
-                "content" : "I led weekly 2-hour discussion sessions to reinforce core course concepts of the C++ curriculum and facilitate collaborative learning. I provided hands-on support during labs, assisting students with assignments, debugging code and reviewing content. I held regular office hours both in-person and online to offer individualized help with lab work and course projects. Every few weeks, I helped proctor exams and supported instructors in managing assessments fairly and efficiently. Furthermore, I contributed to the development of review materials to help students prepare for midterms and finals. I also graded student assignments."
+                "content" : "I led weekly 2-hour discussion sessions to reinforce core course concepts of the C++ curriculum and facilitate collaborative learning. I provided hands-on support during labs, assisting students with assignments, debugging code, and reviewing content. I held regular office hours both in-person and online to offer individualized help with lab work and course projects. Every few weeks, I helped proctor exams and supported instructors in managing assessments fairly and efficiently. Furthermore, I contributed to the development of review materials to help students prepare for midterms and finals. I also graded student assignments."
             },
             {
                 "title" : "High School Math Tutor",
@@ -157,7 +157,7 @@
             "title" : "Shabbat Executive - Chabad Jewish Center UF",
             "date" : "August 2025",
             "image" : "/chabad.jpeg",
-            "content" : "As a Shabbat Executive, I help organize weeking Shabbat dinners, gather feeback from students, and make newcomers and underclassmen feel at home. I also serve as a Chabad mentor for incoming freshmen at UF"
+            "content" : "As a Shabbat Executive, I help organize weekly Shabbat dinners, gather feedback from students, and make newcomers and underclassmen feel at home. I also serve as a Chabad mentor for incoming freshmen at UF."
         },
         {       
             "title" : "R&D Intern - Wham Bam Systems",
