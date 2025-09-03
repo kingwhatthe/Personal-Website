@@ -50,6 +50,7 @@ const Education = ({university, gpa, gradDate, major, image, content}) => {
                 xs: "100%",
             },
             overflow: "hidden",
+            objectFit: "contain",
             borderRadius:"50px",          
         }}src={image} alt="Post image"></Box>
         <Box>

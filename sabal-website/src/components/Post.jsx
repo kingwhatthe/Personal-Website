@@ -78,9 +78,10 @@ export const Post = ({children, title, date, link, image, languages}) => {
                 sm: "100%",
                 xs: "100%",
             },
-            // objectFit:"contain",
+            objectFit:"contain",
             borderRadius:"50px",          
-        }}src={image} alt="Post image"></Box>
+        }}src={image} alt="Post image">
+        </Box>
         <Box>
             <Box>
                 <Box display="flex" flexDirection="row" gap={1} flexWrap="wrap">
