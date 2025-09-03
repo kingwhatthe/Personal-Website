@@ -7,23 +7,23 @@
             "link" : "https://github.com/kingwhatthe/Personal-Website",
             "languages" : [
                 {
-                    "icon": "/js.png",
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
                     "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
                 },
                 {
-                    "icon": "/HTML5_logo_and_wordmark.svg.png",
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png",
                     "link": "https://html.com/"
                 },
                 {
-                    "icon": "/CSS3_logo_and_wordmark.svg.png",
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/726px-CSS3_logo_and_wordmark.svg.png",
                     "link": "https://www.w3.org/Style/CSS/Overview.en.html"
                 },
                 {
-                    "icon": "/React-icon.svg.png",
+                    "icon": "https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-svg-vector.svg",
                     "link": "https://react.com"
                 },
                 {
-                    "icon": "/mui-logo-png_seeklogo-440988.png",
+                    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT24yngytUOIN7kNfMS6jqCw6D8l3rgAPJrwQ&s",
                     "link": "https://mui.com"
                 }
             ],
@@ -35,27 +35,27 @@
             "image" : "/atidrealty.png",
             "languages" : [
                 {
-                    "icon": "/js.png",
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
                     "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
                 },
                 {
-                    "icon": "/HTML5_logo_and_wordmark.svg.png",
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png",
                     "link": "https://html.com/"
                 },
                 {
-                    "icon": "/CSS3_logo_and_wordmark.svg.png",
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/726px-CSS3_logo_and_wordmark.svg.png",
                     "link": "https://www.w3.org/Style/CSS/Overview.en.html"
                 },
                 {
-                    "icon": "/React-icon.svg.png",
+                    "icon": "https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-svg-vector.svg",
                     "link": "https://react.com"
                 },
                 {
-                    "icon": "/PHP-logo.svg.png",
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png",
                     "link": "https://php.net"
                 },
                 {
-                    "icon": "/mui-logo-png_seeklogo-440988.png",
+                    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT24yngytUOIN7kNfMS6jqCw6D8l3rgAPJrwQ&s",
                     "link": "https://mui.com"
                 }
             ],
@@ -68,19 +68,19 @@
             "image" : "/hymenoptera1.jpg",
             "languages" : [
                 {
-                    "icon": "/js.png",
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
                     "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
                 },
                 {
-                    "icon": "/HTML5_logo_and_wordmark.svg.png",
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png",
                     "link": "https://html.com/"
                 },
                 {
-                    "icon": "/CSS3_logo_and_wordmark.svg.png",
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/726px-CSS3_logo_and_wordmark.svg.png",
                     "link": "https://www.w3.org/Style/CSS/Overview.en.html/"
                 },
                 {
-                    "icon": "/PHP-logo.svg.png",
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png",
                     "link": "https://php.net"
                 }
             ],
@@ -93,23 +93,23 @@
             "image" : "/yt.png",
             "languages" : [
                 {
-                    "icon": "/js.png",
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
                     "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
                 },
                 {
-                    "icon": "/HTML5_logo_and_wordmark.svg.png",
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png",
                     "link": "https://html.com/"
                 },
                 {
-                    "icon": "/CSS3_logo_and_wordmark.svg.png",
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/726px-CSS3_logo_and_wordmark.svg.png",
                     "link": "https://www.w3.org/Style/CSS/Overview.en.html"
                 },
                 {
-                    "icon": "/React-icon.svg.png",
+                    "icon": "https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-svg-vector.svg",
                     "link": "https://react.com"
                 },
                 {
-                    "icon": "/mui-logo-png_seeklogo-440988.png",
+                    "icon": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT24yngytUOIN7kNfMS6jqCw6D8l3rgAPJrwQ&s",
                     "link": "https://mui.com"
                 }
             ],
