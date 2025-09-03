@@ -1,24 +1,10 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './Home.css'
 import * as React from 'react'
 import { Link } from 'react-router-dom'
-import Button from "@mui/material/Button"
 import Box from "@mui/material/Box"
-import DownloadIcon from '@mui/icons-material/Download';
-import Typography from "@mui/material/Typography";
 import { motion } from "framer-motion";
-import Footer from './components/Footer'
 import { TextBox } from './components/Post'
 
-const HomeButton = ({children}) =>{
-    return(
-        <Typography>
-            {children}
-        </Typography>
-    );
-}
 const WaveWord = ({ children, onClick }) => {
   // Split word into letters
   const letters = children.split("");
@@ -94,8 +80,8 @@ function Home() {
             alignItems: "center",
             flexDirection: {
             xs: "column",
-            sm: "column", // on extra-small screens → stack vertically
-            md: "row",    // on small+ screens → row layout
+            sm: "column",
+            md: "row",   
             },
 
         }}>
@@ -109,14 +95,15 @@ function Home() {
               <WaveWord>Educate</WaveWord>
             </Link>
         </Box>
-          <TextBox>
-              Hello and welcome to sabalschuster.com! 
-              My name is Sabal. I'm a Computer Science student at the University of Florida with a strong background in C++, web development, and software design. I enjoy turning technical ideas into real tools, whether that's building interactive websites, developing efficient algorithms, or solving problems through collaboration.
-              <br></br>
-              <br></br>
-              To learn more about me, check out my core values by clicking on each of them.
-          </TextBox>
-    
+
+        {/* Content blerb */}
+        <TextBox>
+            Hello and welcome to sabalschuster.com! 
+            My name is Sabal. I'm a Computer Science student at the University of Florida with a strong background in C++, web development, and software design. I enjoy turning technical ideas into real tools, whether that's building interactive websites, developing efficient algorithms, or solving problems through collaboration.
+            <br></br>
+            <br></br>
+            To learn more about me, check out my core values by clicking on each of them.
+        </TextBox>
     </>
   )
 }

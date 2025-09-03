@@ -1,27 +1,25 @@
-import { useState } from 'react'
 import './Home.css'
 import Box from "@mui/material/Box"
 import {Typography} from "@mui/material";
-import { Link, useNavigate} from 'react-router-dom';
-import { motion, rgba } from "framer-motion";
-import { Post } from './components/Post'
 import * as React from 'react';
-import Button from '@mui/material/Button';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
 import postInfo from './postInfo.json'
 import BasicMenu from './components/BasicMenu';
 import MovingBox from './components/MovingBox';
 
 function Create() {
+  //Change color for Iphones
   React.useEffect(() => {
     const metaThemeColor = document.querySelector("meta[name=theme-color]");
     if (metaThemeColor) {
       metaThemeColor.setAttribute("content", "#080422");
     }
   }, []);
+
+  //load from json
   const projects = postInfo.projects;
-  document.documentElement.style.background = "radial-gradient(ellipse, rgba(36, 69, 131, 0.681) 5%,rgb(8, 4, 34) 95%)"
+  
+  //change background color
+  document.documentElement.style.background = "radial-gradient(ellipse, rgba(36, 69, 131, 0.681) 5%,rgb(8, 4, 34) 95%)";
   return (
     <>
         <Box sx={{
@@ -56,7 +54,8 @@ function Create() {
             — Stephen Hawking
           </Typography>
         </Box>
-          
+        
+        {/* Displays posts */}
         {projects?.map((post,i)=>(
             <MovingBox title = {post.title} date = {post.date} link = {post.link} image = {post.image} left={i%2!=0} languages={post.languages}> 
                 {post.content ? post.content : "No Post content"}

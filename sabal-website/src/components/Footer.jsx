@@ -1,17 +1,11 @@
-import { useState } from 'react'
 import Box from "@mui/material/Box"
 import {Typography, IconButton} from "@mui/material";
-import { Link, useNavigate} from 'react-router-dom';
-import { motion, rgba } from "framer-motion";
-import * as React from 'react';
 import Button from '@mui/material/Button';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
-import { footer } from 'framer-motion/client';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import DownloadIcon from '@mui/icons-material/Download';
 
+//Used on every page for contact info
 const Footer = () => {
     return (
         <Box sx={{
@@ -39,6 +33,7 @@ const Footer = () => {
                     <GitHubIcon fontSize='large' sx={{color: "rgba(255,255,255,0.4)"}} />
                 </IconButton>
                 
+                {/* Resume download button */}
                 <Button variant="contained" startIcon={<DownloadIcon />} onClick={()=>{
                     const fileUrl = "resume.pdf";
                     const fileName = "sabal_schuster.pdf";
@@ -60,6 +55,7 @@ const Footer = () => {
                     sabalschuster06@gmail.com
                 </Typography>
             </Box>
+            
             <Typography sx={{fontSize: "8pt", marginTop: "10px"}}>
                 &copy; 2025 Sabal Schuster. All rights reserved.
             </Typography>

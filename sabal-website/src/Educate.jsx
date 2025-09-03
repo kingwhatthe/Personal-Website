@@ -1,25 +1,17 @@
-import { useState } from 'react'
 import './Home.css'
 import Box from "@mui/material/Box"
 import {Typography} from "@mui/material";
-import { Link, useNavigate} from 'react-router-dom';
-import { motion, positionalKeys, rgba } from "framer-motion";
-import { Post } from './components/Post'
 import * as React from 'react';
-import Button from '@mui/material/Button';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
 import BasicMenu from './components/BasicMenu';
 import MovingBox from './components/MovingBox';
 import postInfo from './postInfo.json';
 import { TextBox } from './components/Post';
 
 const Education = ({university, gpa, gradDate, major, image, content}) => {
-      // Convert children to plain text
-      const text = React.Children.toArray(content).join(" ");
-  
-      // Count words by splitting on whitespace
-      const wordCount = text.trim().split(/\s+/).filter(Boolean).length;
+      
+  //Used to count words to adjust post layout in case post content is too long
+  const text = React.Children.toArray(content).join(" ");
+  const wordCount = text.trim().split(/\s+/).filter(Boolean).length;
   return(<>
     <Box justifyContent="center" display="flex" gap={3}
     sx = {{
@@ -35,10 +27,6 @@ const Education = ({university, gpa, gradDate, major, image, content}) => {
             },
     }}>
         <Box component="img" sx={{
-            // maxHeight: {
-            //     md: wordCount>=100 ? "1000px" : "400px",
-            //     sm: "1000px",
-            // },
             width: {
                 md: wordCount>=100 ? "100%" : "50%",
                 sm: "100%",
@@ -97,19 +85,12 @@ function Educate() {
       metaThemeColor.setAttribute("content", "#221e04ff");
     }
   }, []);
+  //Loads from json
   const experiences = postInfo.education.experience;
   const education = postInfo.education.college;
-//   const langs = [
-//           {
-//             icon: jsLogo,
-//             link: "js.com"
-//           },
-//           {
-//             icon: reactLogo,
-//             link: "react.com"
-//           }
-//         ];
-    document.documentElement.style.background = "radial-gradient(ellipse, rgba(131, 99, 36, 0.68) 5%,rgba(34, 26, 4, 1) 95%)"
+
+  //Changes background color
+  document.documentElement.style.background = "radial-gradient(ellipse, rgba(131, 99, 36, 0.68) 5%,rgba(34, 26, 4, 1) 95%)";
   return (
     <>
         <Box sx={{
@@ -132,7 +113,6 @@ function Educate() {
           textShadow: "5px 5px 5px rgba(0,0,0,0.7)"
         }}>
           <Box sx = {{
-            // background: "radial-gradient(ellipse, rgba(255,255,255,0.3) 0%, rgba(0,0,0,0) 70%)",
             p: 5,
           }}>
             <Typography variant='h1'>Education 📖✏️</Typography>
@@ -146,18 +126,11 @@ function Educate() {
           </Typography>
         </Box>
         <Education university={education.university} gpa={education.GPA} gradDate={education.graduation} image={education.image} major={education.major} content={education.content}/>
-          {experiences?.map((post,i)=>(
-            <MovingBox title = {post.title} date = {post.date} link = {post.link} image = {post.image} left={i%2!=0} languages={post.languages}> 
-                {post.content ? post.content : "No Post content"}
-            </MovingBox>
-          ))}
-        
-        {/* <MovingBox title = "this is a post" date = "8/20/2020" link = "https://google.com" image = "/sabalschuster.jpg" left={true}> 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea omnis doloribus ad placeat aut dicta repudiandae illo debitis accusantium exercitationem atque odit deserunt eveniet fugiat id voluptates, voluptatibus reiciendis? Quod.
-        </MovingBox>
-        <MovingBox title = "this is a post" date = "8/20/2020" link = "https://google.com" image = "/sabalschuster.jpg" left={false}> 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea omnis doloribus ad placeat aut dicta repudiandae illo debitis accusantium exercitationem atque odit deserunt eveniet fugiat id voluptates, voluptatibus reiciendis? Quod.
-        </MovingBox> */}
+        {experiences?.map((post,i)=>(
+          <MovingBox title = {post.title} date = {post.date} link = {post.link} image = {post.image} left={i%2!=0} languages={post.languages}> 
+              {post.content ? post.content : "No Post content"}
+          </MovingBox>
+        ))}
     </>
   )
 }

@@ -1,17 +1,16 @@
-import { useState } from 'react'
+
 import Box from "@mui/material/Box"
-import {Typography} from "@mui/material";
-import { Link, useNavigate} from 'react-router-dom';
-import { motion, rgba } from "framer-motion";
+import { useNavigate} from 'react-router-dom';
 import * as React from 'react';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 
+//Used for navigation on non-home page
 export default function BasicMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
-  const navigate = useNavigate(); // ✅ put it here
+  const navigate = useNavigate();
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -19,7 +18,7 @@ export default function BasicMenu() {
 
   const handleClose = (page) => {
     if (page) {
-      navigate(page); // ✅ navigate correctly
+      navigate(page);
     }
     setAnchorEl(null);
   };
@@ -47,7 +46,7 @@ export default function BasicMenu() {
         id="basic-menu"
         anchorEl={anchorEl}
         open={open}
-        onClose={() => handleClose(null)} // just close if clicked outside
+        onClose={() => handleClose(null)}
         slotProps={{
           list: {
             'aria-labelledby': 'basic-button',

@@ -1,14 +1,8 @@
-import { useState } from 'react'
 import Box from "@mui/material/Box"
-import {Typography} from "@mui/material";
-import { Link, useNavigate} from 'react-router-dom';
-import { motion, rgba } from "framer-motion";
+import { motion } from "framer-motion";
 import { Post } from './Post'
-import * as React from 'react';
-import Button from '@mui/material/Button';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
 
+//Will come from left side if left is true.
 const MovingBox = ({title, date, link, image, left, children, languages}) =>{
   return (
      <Box
