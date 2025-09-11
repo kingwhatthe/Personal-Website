@@ -23,7 +23,7 @@ const Footer = () => {
                 gap: 1,
                 alignItems: "center",
             }}>
-                <Typography>
+                <Typography component="a" href="tel:+6494461709" sx = {{color: "inherit"}}>
                 954-706-8015
                 </Typography>
                 <IconButton size = "large" color="primary" aria-label="Linkedin" href = "https://www.linkedin.com/in/sabalschuster/">
@@ -48,10 +48,10 @@ const Footer = () => {
                 }}>
                     Resume
                 </Button>
-                <Typography>
+                 <Typography component='a' href = "sabalschuster@ufl.edu" sx={{color: "inherit"}}>
                     sabalschuster@ufl.edu
                 </Typography>
-                <Typography>
+                <Typography component='a' href = "sabalschuster06@gmail.com" sx={{color: "inherit"}}>
                     sabalschuster06@gmail.com
                 </Typography>
             </Box>
