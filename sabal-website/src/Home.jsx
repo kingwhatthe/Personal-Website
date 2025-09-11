@@ -14,12 +14,11 @@ const WaveWord = ({ children, onClick }) => {
       component="span"
       onClick={onClick}
       sx={{
-        textShadow: "5px 5px 2px rgba(0,0,0,.4)",
+        textShadow: "8px 8px 5px rgba(0,0,0,.4)",
         display: "inline-flex",
         gap: "2px",
-        fontSize: "3rem",
+        fontSize: "5rem",
         fontWeight: "bold",
-        cursor: "pointer",
         userSelect: "none",
         padding: "20px",
         color:"white",
@@ -47,6 +46,10 @@ const WaveWord = ({ children, onClick }) => {
 
 function Home() {
 
+  const isMobile = /Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent
+  );
+
   React.useEffect(() => {
     const metaThemeColor = document.querySelector("meta[name=theme-color]");
     if (metaThemeColor) {
@@ -72,7 +75,7 @@ function Home() {
             borderRadius:"50px",
             boxShadow: "7px 7px 5px rgba(0,0,0,.4)"
             }} src="/web-app-manifest-512x512.png" alt="Sabal Schuster img" />
-          <h1 class = "name">Sabal Schuster</h1>
+          <WaveWord>Sabal Schuster</WaveWord>
         </Box>
         
         <Box display="flex" gap={10} sx = {{
@@ -86,20 +89,41 @@ function Home() {
 
         }}>
             <Link to="connect">
-              <WaveWord>Connect</WaveWord>
+              <Box component = "h1" sx = {{
+                color: "white",
+                textShadow: isMobile ? "none" : "5px 5px 2px rgba(0,0,0,.4)",
+                "&:hover": { color: "rgba(181, 181, 181, 1)" },
+                textDecoration: isMobile ? "underline" : "none"
+              }}>
+                Connect
+              </Box>
             </Link>
             <Link to="create">
-              <WaveWord>Create</WaveWord>
+              <Box component = "h1" sx = {{
+                color: "white",
+                textShadow: isMobile ? "none" : "5px 5px 2px rgba(0,0,0,.4)",
+                "&:hover": { color: "rgba(181, 181, 181, 1)" },
+                textDecoration: isMobile ? "underline" : "none"
+              }}>
+                Create
+              </Box>
             </Link>
             <Link to="educate">
-              <WaveWord>Educate</WaveWord>
+              <Box component = "h1" sx = {{
+                color: "white",
+                textShadow: isMobile ? "none" : "5px 5px 2px rgba(0,0,0,.4)",
+                "&:hover": { color: "rgba(181, 181, 181, 1)" },
+                textDecoration: isMobile ? "underline" : "none"
+              }}>
+                Educate
+              </Box>
             </Link>
         </Box>
 
         {/* Content blerb */}
         <TextBox>
             Hello and welcome to sabalschuster.com! 
-            My name is Sabal. I'm a Computer Science student at the University of Florida with a strong background in C++, web development, and software design. I enjoy turning technical ideas into real tools, whether that's building interactive websites, developing efficient algorithms, or solving problems through collaboration.
+            My name is Sabal. I'm a Computer Engineering student at the University of Florida with a strong background in C++, web development, and software design. I enjoy turning technical ideas into real tools, whether that's building interactive websites, developing efficient algorithms, or solving problems through collaboration.
             <br></br>
             <br></br>
             To learn more about me, check out my core values by clicking on each of them.
