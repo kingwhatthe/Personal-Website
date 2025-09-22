@@ -21,28 +21,31 @@ const WaveWord = ({ children, onClick }) => {
         fontWeight: "bold",
         userSelect: "none",
         padding: "20px",
-        color:"white",
+        color: "white",
       }}
     >
-      {letters.map((letter, i) => (
-        <motion.span
-          key={i}
-          whileHover={{ y: -6 }}
-          whileTap={{ y: 6, scale: 0.9 }}
-          transition={{
-            type: "spring",
-            stiffness: 400,
-            damping: 10,
-            delay: i * 0.05, // wave effect
-          }}
-        >
-          {letter}
-        </motion.span>
-      ))}
+      {letters.map((letter, i) =>
+        letter === " " ? (
+          <span key={i} style={{ width: ".5ch" }} />
+        ) : (
+          <motion.span
+            key={i}
+            whileHover={{ y: -6 }}
+            whileTap={{ y: 6, scale: 0.9 }}
+            transition={{
+              type: "spring",
+              stiffness: 400,
+              damping: 10,
+              delay: i * 0.05, // wave effect
+            }}
+          >
+            {letter}
+          </motion.span>
+        )
+      )}
     </Box>
   );
 };
-
 
 function Home() {
 
