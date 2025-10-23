@@ -1,5 +1,34 @@
 {
     "projects": [
+        {   
+            "title": "Rescue - Anxiety App",
+            "date" : "September 2025",
+            "image" : "https://avatars.githubusercontent.com/u/236011140?s=200&v=4",
+            "link" : "https://rescueanxietyapp.org/",
+            "languages" : [
+                {
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
+                    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                },
+                {
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png",
+                    "link": "https://html.com/"
+                },
+                {
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/726px-CSS3_logo_and_wordmark.svg.png",
+                    "link": "https://www.w3.org/Style/CSS/Overview.en.html"
+                },
+                {
+                    "icon": "https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-svg-vector.svg",
+                    "link": "https://react.com"
+                },
+                {
+                    "icon": "https://miro.medium.com/v2/resize:fit:1024/1*eM0EFafJz-_ZEWDpL6F83g.png",
+                    "link": "https://expo.dev/"
+                }
+            ],
+            "content":"This project I started working on through TAMID. Rescue is an Israeli startup creating an app to combat anxiety attacks. We are developing a frontend and login system for a their app. It involves us communicating weekly with the CTO of the company, and meet with each other bi weekly for sprint meetings. I am working on various frontend tasks including navigation and styling issues."
+        },
         {
             "title": "This Website!",
             "date" : "September 2025",
@@ -147,6 +176,12 @@
         ]
     },
     "connections":[
+        {           
+            "title" : "TAMID - Software Developer",
+            "date" : "September 2025",
+            "image" : "https://media.licdn.com/dms/image/v2/D4D22AQH3PC4_A3rm5w/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1724363916831?e=2147483647&v=beta&t=sNg13DNnT2qaNC7AatXah6RQIISLs7xZtHWYKrlIkgs",
+            "content" : "As a member of the TAMID Group, I work with Israeli start-ups and small businesses to develop web and mobile applications tailored to their market needs. Each year, I consult with different companies to provide software solutions and collaborate with teammates, project managers, and company leadership to design, refine, and deploy applications. I participate in tri-weekly sprint meetings to ensure progress and alignment with goals while utilizing technologies such as React, Expo, and Firebase to deliver production-ready products."
+        },    
         {       
             "title" : "Software Engineering Club - Head of Operations",
             "date" : "August 2025",
