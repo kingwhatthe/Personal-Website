@@ -98,7 +98,7 @@ export const Post = ({children, title, date, link, image, languages}) => {
                 <Box display="flex" alignItems="flex-start" flexDirection="column" gap = {2}>
                     <Typography variant="h4">{date}</Typography>
                     {link ?
-                    <Button variant="contained" href={link}>Go to Project</Button>
+                    <Button variant="contained" href={link} target="_blank" rel="noopener noreferrer">Go to Project</Button>
                     : <></>}
                 </Box>
                 
